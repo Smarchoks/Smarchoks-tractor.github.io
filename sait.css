@@ -56,10 +56,11 @@
 
 .call-button_text {
   position: relative;
-  color: #333; /* Цвет текста */
+  color: #000000; /* Цвет текста */
   text-decoration: none;
   font-weight: 500;
   padding-bottom: 3px; /* Отступ для линии */
+  font-weight: 600;
 }
 
 /* Подчеркивание при обычном состоянии */
@@ -67,7 +68,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   width: 100%;
   height: 2px;
   background-color: #ff6b00; /* Оранжевый цвет */
@@ -83,22 +84,17 @@
 }
 
 @media (max-width: 565px) {
-  .logo_nameees {
-    display: none;
-  }
-  .logo {
-    display: none;
-  }
+ 
 
   .logo_name {
     font-size: 1.7rem;
     font-weight: 700;
-    background-color: #ff6b00;
-    border-radius: 10px;
-    padding: 10px;
+    
+    
+    
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 575px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -110,4 +106,32 @@
   .logo {
     display: block;
   }
+  
+  .call-button {
+    padding-bottom: 20px;
+  }
+
+}
+@media (min-width: 320px) {
+  .logo_name {
+    min-width: min-content;
+  }
+}
+@media (max-width: 618px) {
+  .header {
+    padding: 8px 15px;
+  }
+  .logo_name {
+    font-size: 1rem;
+  }
+
+  
+}
+
+@media (max-width:395px) {
+  .logo_name {
+   font-size: 0.9rem;
+  }
+
+  
 }

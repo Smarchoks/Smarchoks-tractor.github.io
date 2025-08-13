@@ -129,8 +129,10 @@ body {
 
 /* Обертка для цен */
 .price-wrapper {
-  margin: 15px 0;
+  padding: 15px 0 30px 0;
   text-align: center;
+  background-color: #2c3e500d;
+  box-shadow: 7PX;
 }
 
 /* Основная цена */
